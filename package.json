@@ -1,0 +1,15 @@
+{
+  "name": "CricketScoreKeeper",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/Asavelawayiza/bootcamp-terminal-tests.svg?branch=master)](https://travis-ci.org/Asavelawayiza/bootcamp-terminal-tests)",
+  "main": "cricket.tests.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
+}
