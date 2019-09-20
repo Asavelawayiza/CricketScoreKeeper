@@ -1,52 +1,55 @@
 module.exports = function CricketScoreKeeper() {
 
-    var wickets = 0;
+    var wicket = 0;
     var total = 0;
     var error = "Game Over"
 
-    function checkWickets(wicket) {
+    function getWicket() {
+        return wicket;
+    }
+
+    function checkingWickets(wicket) {
 
         if (wicket <= 10) {
             wickets.push(wicket);
             return true;
         }
-        else if (wicket >= 10) {
+        else {
             return error;
         }
     }
 
-    function extractOvers(over) {
-        overs = 10;
-        over = "-1-3-w"
-        for (var i = 0; i < overs.length; i++) {
-            var score = overs[i];
+    function extractingOvers(overs) {
+        var wicketScore = overs[0].split('')
 
-            if (score === over){
+        for (var i = 0; i < wicketScore.length; i++) {
+            var score = wicketScore[i];
 
-                return total;
+            if (score === 'w') {
+                wicket += 1;
+
             }
-            else {
-                return wickets;
+            else if (score === '4') {
+                total += 4;
+
             }
 
         }
-
+        return total;
 
     }
+
+    function getTotal() {
+        return total;
+    }
+
 
     return {
-        checkWickets,
-        extractOvers
-
+        checkingWickets,
+        extractingOvers,
+        getWicket,
+        getTotal
     }
 
-    //    var score = "";
-    //     for (var i = 0; i < wickets.length; i++) {
-    //         if (wickets <= 10) {
-    //             score.push(wickets[i]);
-    //         }
-
-
-    //     }
 
 }

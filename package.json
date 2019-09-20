@@ -4,7 +4,7 @@
   "description": "[![Build Status](https://travis-ci.org/Asavelawayiza/bootcamp-terminal-tests.svg?branch=master)](https://travis-ci.org/Asavelawayiza/bootcamp-terminal-tests)",
   "main": "cricket.tests.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
