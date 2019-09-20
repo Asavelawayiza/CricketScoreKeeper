@@ -27,14 +27,13 @@ module.exports = function CricketScoreKeeper() {
 
             if (score === 'w') {
                 wicket += 1;
-
             }
+
             else if (score === '4') {
                 total += 4;
-
             }
-
         }
+        
         return total;
 
     }
@@ -42,6 +41,7 @@ module.exports = function CricketScoreKeeper() {
     function getTotal() {
         return total;
     }
+
 
 
     return {

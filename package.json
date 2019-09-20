@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "[![Build Status](https://travis-ci.org/Asavelawayiza/bootcamp-terminal-tests.svg?branch=master)](https://travis-ci.org/Asavelawayiza/bootcamp-terminal-tests)",
   "main": "cricket.tests.js",
+  "test": "test",
+
   "scripts": {
     "test": "mocha"
+    
   },
   "keywords": [],
   "author": "",
